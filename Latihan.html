@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Konversi Nilai</title>
+    </head>
+    <script language="Javascript">
+        function test () {
+            var nilai=document.kirim. T1. value
+            if (nilai >= 0 && nilai <=40){
+                document.kirim.T2. value="E"
+            } else if (nilai >= 41 && nilai <=55){
+                document.kirim.T2. value="D"
+            } else if (nilai >= 56 && nilai <=60){
+                document.kirim.T2. value="BC"
+            } else if (nilai >= 66 && nilai <=70){
+                document.kirim.T2. value="B"
+            } else if (nilai >= 71 && nilai <=80){
+                document.kirim.T2. value="AB"
+            } else if (nilai >= 81 && nilai <=100){
+                document.kirim.T2. value="A"
+            } else if (nilai > 100){
+                document.kirim.T2. value="Nilai tidak dapat dikonversi"
+            }
+        }
+    </script>
+    <body>
+        <h1>Konversi Nilai</h1>
+        <form method="POST" name="kirim">
+            <p>Masukkan Angka : <input type="text" name="T1" size="10"> <input type="button" value="Konversi" name="B1" onclick=test()> </p>
+            <p>Hasil Konversi : <input type="text" name="T2" size="10"> </p>
+        </form>
+    </body>
+</html>
